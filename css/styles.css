@@ -102,4 +102,147 @@ a {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding: 45px 0;
+}
+
+/* SITE-HEADER */
+.site-header {
+  padding: 24px 0;
+  background-color: var(--element-bg);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.dark-button {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-dark-mode-image {
+  margin-right: 10px;
+  width: 18px;
+  height: 17px;
+}
+
+.header-dark-mode-text {
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* COUNTRIES */
+.countries-header {
+  margin-bottom: 45px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-color: var(--element-bg);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  background-position: 32px center;
+  padding: 18px 240px 18px 74px;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.search-input::placeholder {
+  color: var(--text-color);
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  background-color: var(--element-bg);
+  padding: 18px 24px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+.select-name {
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.select-image {
+  width: 9px;
+  height: 5px;
+}
+
+.countries-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -74px;
+  margin-bottom: -74px;
+}
+
+.countries-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--element-bg);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+  width: 264px;
+  margin-left: 74px;
+  margin-bottom: 74px;
+}
+
+.countries-flag-image {
+  width: 264px;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.countries-box-texts {
+  padding: 24px;
+}
+
+.countries-box-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.countries-box-info {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.value {
+  font-weight: 300;
 }
