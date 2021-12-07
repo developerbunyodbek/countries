@@ -110,7 +110,8 @@ a {
 .site-header {
   padding: 24px 0;
   background-color: var(--element-bg);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
 }
 
 .site-header-container {
@@ -120,10 +121,19 @@ a {
 }
 
 .header-title {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 24px;
-  line-height: 32px;
+  line-height: normal;
   margin: 0;
+  color: var(--text-color);
+}
+
+.header-title:hover {
+  opacity: 0.8;
+}
+
+.header-title:active {
+  opacity: 0.6;
 }
 
 .dark-button {
@@ -134,10 +144,18 @@ a {
   cursor: pointer;
 }
 
+.dark-button:hover {
+  opacity: 0.8;
+}
+
+.dark-button:active {
+  opacity: 0.6;
+}
+
 .header-dark-mode-image {
   margin-right: 10px;
-  width: 18px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 }
 
 .header-dark-mode-text {
@@ -157,20 +175,23 @@ a {
   align-items: center;
 }
 
+.countries-box-title-link {
+  color: var(--text-color);
+}
+
 .search-input {
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-color: var(--element-bg);
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
-  border-radius: 5px;
-  background-position: 32px center;
-  padding: 18px 240px 18px 74px;
+  min-width: 480px;
   outline: none;
-  border: none;
-  width: 100%;
-  color: var(--text-color);
+  background-position: 32px center;
+  padding: 18px 18px 18px 74px;
   border: 0;
+  border-radius: 5px;
+  color: var(--text-color);
+  box-shadow: 0px 2px 9px rgb(0 0 0 / 6%);
 }
 
 .search-input::placeholder {
@@ -204,7 +225,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: var(--element-bg);
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
   border-radius: 5px;
   width: 264px;
   margin-left: 74px;
@@ -240,12 +261,12 @@ a {
   font-weight: 300;
 }
 
-/* BELGIUM */
-.belgium-main {
+/* Flag */
+.flag-main {
   padding: 80px 0 343px;
 }
 
-.belguim-header {
+.flag-header {
   background-color: var(--element-bg);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
   border-radius: 6px;
@@ -256,23 +277,23 @@ a {
   color: var(--text-color);
 }
 
-.belguim-back {
+.flag-back {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-.belgium-back-text {
+.flag-back-text {
   line-height: 20px;
   font-weight: 300;
 }
 
-.belguim-content {
+.flag-content {
   display: flex;
   align-items: center;
 }
 
-.belgium-content-image {
+.flag-content-image {
   box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.0294384);
   border-radius: 10px;
   width: 560px;
@@ -280,13 +301,14 @@ a {
   overflow: hidden;
 }
 
-.belgium-content-flag {
+.flag-content-flag {
   display: block;
   width: 560px;
   height: 400px;
+  object-fit: cover;
 }
 
-.belgium-content-title {
+.flag-content-title {
   font-size: 32px;
   line-height: 44px;
   font-weight: bold;
@@ -295,17 +317,17 @@ a {
   margin-bottom: 23px;
 }
 
-.belgium-content-info {
+.flag-content-info {
   margin-bottom: 70px;
 }
 
-.belgium-content-list {
+.flag-content-list {
   display: flex;
   justify-content: space-between;
   padding: 0;
   list-style: none;
 }
-.belgium-box-item:not(:last-child) {
+.flag-box-item:not(:last-child) {
   margin-right: 140px;
 }
 

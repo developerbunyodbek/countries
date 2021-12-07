@@ -16,10 +16,10 @@
   <header class="site-header">
     <div class="site-header-container container">
       <div class="header-text">
-        <h2 class="header-title">Where in the world?</h2>
+        <a class="header-title" href="index.html">Where in the world?</a>
       </div>
-      <button class="dark-button light-button" type="button">
-        <img class="header-dark-mode-image" src="img/icon-moon.svg" alt="Moon image" width="18" height="17">
+      <button class="dark-button" type="button">
+        <img class="header-dark-mode-image" src="img/icon-moon.svg" alt="Moon image" width="20" height="20">
         <span class="header-dark-mode-text">Dark Mode</span>
       </button>
     </div>
@@ -30,11 +30,9 @@
       <section class="countries">
         <div class="countries-header">
           <form action="https://echo.htmlacademy.ru/" method="POST" class="form-group">
-            <div class="search">
-              <input class="search-input" type="search" placeholder="Search for a country…" aria-label="search">
-            </div>
+            <input class="search-input" type="search" placeholder="Search for a country…" aria-label="search">
             <select class="select-button">
-              <option class="select-opt" selected>Filter by Region</option>
+              <option class="select-opt" selected disabled>Filter by Region</option>
               <option class="select-opt">Africa</option>
               <option class="select-opt">America</option>
               <option class="select-opt">Asia</option>
@@ -47,7 +45,9 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-germany.jpg" alt="Germany" width="266" height="160" srcset="img/flag-germany.jpg 1x, img/flag-germany@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Germany</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="germany.html">Germany</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">81,770,900</span></p>
               <p class="countries-box-info">Region: <span class="value">Europe</span></p>
               <p class="countries-box-info">Capital: <span class="value">Berlin</span></p>
@@ -56,7 +56,9 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-usa.jpg" alt="USA" width="266" height="160" srcset="img/flag-usa.jpg 1x, img/flag-usa@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">United States of America</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="usa.html">United States of America</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">323,947,000</span></p>
               <p class="countries-box-info">Region: <span class="value">Americas</span></p>
               <p class="countries-box-info">Capital: <span class="value">Washington, D.C.</span></p>
@@ -65,7 +67,9 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-brazil.jpg" alt="Brazil" width="266" height="160" srcset="img/flag-brazil.jpg 1x, img/flag-brazil@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Brazil</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="brazil.html">Brazil</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">206,135,893</span></p>
               <p class="countries-box-info">Region: <span class="value">Americas</span></p>
               <p class="countries-box-info">Capital: <span class="value">Brasília</span></p>
@@ -74,7 +78,9 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-iceland.jpg" alt="Iceland" width="266" height="160" srcset="img/flag-iceland.jpg 1x, img/flag-iceland@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Iceland</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="iceland.html">Iceland</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">334,300</span></p>
               <p class="countries-box-info">Region: <span class="value">Europe</span></p>
               <p class="countries-box-info">Capital: <span class="value">Reykjavík</span></p>
@@ -83,16 +89,20 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-ex-afghanistan.jpg" alt="Afghanistan" width="266" height="160" srcset="img/flag-ex-afghanistan.jpg 1x, img/flag-ex-afghanistan@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Afghanistan</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="afghanistan.html">Afghanistan</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">27,657,145</span></p>
               <p class="countries-box-info">Region: <span class="value">Asia</span></p>
               <p class="countries-box-info">Capital: <span class="value">Kabul</span></p>
             </div>
           </div>
           <div class="countries-box">
-            <img class="countries-flag-image" src="img/flag-iceland.jpg" alt="Åland Islands" width="266" height="160" srcset="img/flag-iceland.jpg 1x, img/flag-iceland@2x.jpg 2x">
+            <img class="countries-flag-image" src="img/flag-aland.jpg" alt="Åland Islands" width="266" height="160" srcset="img/flag-aland.jpg 1x, img/flag-aland@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Åland Islands</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="aland.html">Åland Islands</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">28,875</span></p>
               <p class="countries-box-info">Region: <span class="value">Europe</span></p>
               <p class="countries-box-info">Capital: <span class="value">Mariehamn</span></p>
@@ -101,7 +111,9 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-albania.jpg" alt="albania" width="266" height="160" srcset="img/flag-albania.jpg 1x, img/flag-albania@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Albania</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="albania.html">Albania</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">2,886,026</span></p>
               <p class="countries-box-info">Region: <span class="value">Europe</span></p>
               <p class="countries-box-info">Capital: <span class="value">Tirana</span></p>
@@ -110,7 +122,9 @@
           <div class="countries-box">
             <img class="countries-flag-image" src="img/flag-algeria.jpg" alt="Algeria" width="266" height="160" srcset="img/flag-algeria.jpg 1x, img/flag-algeria@2x.jpg 2x">
             <div class="countries-box-texts">
-              <h3 class="countries-box-title">Algeria</h3>
+              <h3 class="countries-box-title">
+                <a class="countries-box-title-link" href="algeria.html">Algeria</a>
+              </h3>
               <p class="countries-box-info">Population: <span class="value">40,400,000</span></p>
               <p class="countries-box-info">Region: <span class="value">Africa</span></p>
               <p class="countries-box-info">Capital: <span class="value">Algiers</span></p>
